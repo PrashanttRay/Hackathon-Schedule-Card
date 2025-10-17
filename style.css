@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Schedule Card */
+.schedule-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-left: 8px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect */
+.schedule-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Event Name */
+.event-name {
+  font-size: 1.3rem;
+  color: #222;
+  font-weight: 600;
+}
+
+/* Event Details */
+.event-details p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Status Styling */
+.status {
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Status Color Coding */
+.upcoming {
+  border-left-color: #007bff;
+}
+.upcoming .status {
+  background-color: #007bff;
+}
+
+.ongoing {
+  border-left-color: #28a745;
+}
+.ongoing .status {
+  background-color: #28a745;
+}
+
+.completed {
+  border-left-color: #6c757d;
+}
+.completed .status {
+  background-color: #6c757d;
+}
