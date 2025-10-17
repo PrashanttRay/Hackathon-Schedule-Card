@@ -1,1 +1,1 @@
-# Hackathon-Schedule-Card
+# Hackathon Schedule Card
